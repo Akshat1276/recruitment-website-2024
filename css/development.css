@@ -80,9 +80,11 @@
     /* margin-bottom: 2rem; */
     display: inline-block;
     
+    white-space: nowrap;
   }
   .card-link1{
     color: #914C10;
+    
   }
   .card-link2{
     color: #FFDC89;
@@ -103,9 +105,9 @@
     /* align-self: flex-start;  */
     position: absolute;
     bottom: 25px;     
-    left: 75%;
+    left: 73%;
     transform: translateX(-50%);
-    
+    white-space: nowrap;
   }
   .submit-button1{
     font-family: funnel display;
@@ -133,6 +135,7 @@
     bottom: 25px;     
     left: 30%;
     transform: translateX(-50%);
+    
   }
   .submit-button3{
     font-family: funnel display;
@@ -167,6 +170,8 @@
     pointer-events: none; 
     border-radius: 20px;
   }
+
+  
   
   
   /* Responsive */
