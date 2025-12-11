@@ -18,13 +18,13 @@
   .cards-container {
     display: flex;
     gap: 3rem;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
   }
   
   .design-card {
     width: 500px;
-    min-height: 620px;
+    min-height: 590px;
     border-radius: 40px;
     padding: 2.5rem;
     position: relative;
@@ -74,13 +74,12 @@
   
   .card-link1, .card-link2 {
     font-family: 'funnel display';
-    font-size: 1rem;
-    /* color: #ffffff; */
-    text-decoration: underline;
-    /* margin-bottom: 2rem; */
-    display: inline-block;
-    
+    position: absolute;
+    bottom: 165px;        /* 95px above button — matches screenshot layout */
+    left: 70%;
+    transform: translateX(-50%);
     white-space: nowrap;
+    z-index: 3;
   }
   .card-link1{
     color: #914C10;
