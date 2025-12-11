@@ -7,3 +7,186 @@
 .second-year-wrapper {
     padding-top: .83em;
 }
+
+
+.cards-section {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 3rem;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+  }
+  
+  .design-card {
+    width: 500px;
+    min-height: 590px;
+    border-radius: 40px;
+    padding: 2.5rem;
+    position: relative;
+    color: #1C213A;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* pushes button to bottom */
+  }
+  
+  .gold-card {
+    background: rgba(242, 193, 78, 1);
+
+  }
+  
+  .rust-card {
+    background: rgba(191, 104, 27, 1);
+    color: #1C213A;
+  }
+  
+  .card-title1, .card-title2{
+    font-family: 'adonais';
+    font-size: 1.8rem;
+    /* margin-bottom: 1.5rem; */
+  }
+  .card-title1{
+    color: #BF681B
+  }
+  .card-title2{
+    color: #FFDC89;
+
+  }
+  
+  .card-text1, .card-text2 {
+    font-family:funnel display; 
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  .card-text1{
+    color: #914C10
+  }
+  .card-text2{
+    color: #FFDC89;
+
+  }
+  
+  .card-link1, .card-link2 {
+    font-family: 'funnel display';
+    position: absolute;
+    bottom: 165px;        /* 95px above button — matches screenshot layout */
+    left: 70%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 3;
+  }
+  .card-link1{
+    color: #914C10;
+    
+  }
+  .card-link2, .card-link3{
+    color: #FFDC89;
+  }
+  .card-link3{
+    font-family: 'funnel display';
+    position: absolute;
+    bottom: 165px;        /* 95px above button — matches screenshot layout
+    /* left: 70%;
+    transform: translateX(-50%); */ 
+    white-space: nowrap;
+    z-index: 3;
+  }
+  
+  .submit-button1, .submit-button2 {
+    /* display: block;
+    margin: 0 auto; */
+    font-family: 'funnel display';
+    background: #1C213A;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto;      
+    /* align-self: flex-start;  */
+    position: absolute;
+    bottom: 25px;     
+    left: 73%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .submit-button1{
+    font-family: funnel display;
+    background: #BF681B;
+    color: #FFFFFF;
+  }
+  .submit-button2{
+    font-family: funnel display;
+    background:#FFCB51;
+    
+    color: #13181C;
+  }
+  .submit-button3, .submit-button4{
+    font-family: funnel display;
+    /* background: #FFCB51; */
+    color: #13181C;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: auto;      
+    /* align-self: flex-start;  */
+    position: absolute;
+    bottom: 25px;     
+    left: 30%;
+    transform: translateX(-50%);
+    
+  }
+  .submit-button3{
+    font-family: funnel display;
+    background: #BF681B;
+    color: #FFFFFF;
+  }
+  .submit-button4{
+    font-family: funnel display;
+    background:#FFCB51;
+    
+    color: #13181C;
+  }
+
+  
+  /* .submit-button:hover {
+    background: #000;
+  }
+   */
+  .card-art {
+    position: absolute;
+    bottom: 0;
+    left: 0;        
+    width: 200px;
+    pointer-events: none; 
+    border-radius: 20px;
+  }
+  .card-art2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;        
+    width: 200px;
+    pointer-events: none; 
+    border-radius: 20px;
+  }
+
+  
+  
+  
+  /* Responsive */
+  @media screen and (max-width: 1100px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
