@@ -30,10 +30,14 @@
     position: relative;
     color: #1C213A;
     font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* pushes button to bottom */
   }
   
   .gold-card {
     background: rgba(242, 193, 78, 1);
+
   }
   
   .rust-card {
@@ -68,18 +72,26 @@
 
   }
   
-  .card-link {
+  .card-link1, .card-link2 {
+    font-family: 'funnel display';
     font-size: 1rem;
-    color: #ffffff;
+    /* color: #ffffff; */
     text-decoration: underline;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     display: inline-block;
+    
+  }
+  .card-link1{
+    color: #914C10;
+  }
+  .card-link2{
+    color: #FFDC89;
   }
   
   .submit-button1, .submit-button2 {
-    display: block;
-    margin: 0 auto;
-    font-family: 'Space Grotesk';
+    /* display: block;
+    margin: 0 auto; */
+    font-family: 'funnel display';
     background: #1C213A;
     color: white;
     border: none;
@@ -87,6 +99,24 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
+    margin-top: auto;      
+    /* align-self: flex-start;  */
+    position: absolute;
+    bottom: 25px;     
+    left: 75%;
+    transform: translateX(-50%);
+    
+  }
+  .submit-button1{
+    font-family: funnel display;
+    background: #BF681B;
+    color: #FFFFFF;
+  }
+  .submit-button2{
+    font-family: funnel display;
+    background:#FFCB51;
+    
+    color: #13181C;
   }
   
   .submit-button:hover {
@@ -97,9 +127,9 @@
     position: absolute;
     bottom: 0;
     left: 0;        
-    width: 180px;
-
+    width: 200px;
     pointer-events: none; 
+    border-radius: 20px;
   }
   
   
