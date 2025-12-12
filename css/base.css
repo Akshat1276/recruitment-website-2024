@@ -71,8 +71,8 @@ nav {
 }
 
 .site-logo-text {
-  font-family: 'batman-forever';
-  font-weight: bold;
+  font-family: 'adonais';
+  font-weight: 400;
   font-size: 0.75em;
   line-height: 1rem;
   margin-left: 1em;
@@ -87,7 +87,7 @@ nav {
 }
 
 .navlink {
-  font-family: 'batman-forever';
+  font-family: 'adonais';
   font-size: 0.675em;
   line-height: 0.67rem;
   color: #FFFFFF;
@@ -98,16 +98,16 @@ nav {
 
 .navlink[selected="True"] {
    font-weight: 900;
-  color: #FFFFFF;
+  color: #C9A227;
 }
 .navlink[selected="True"]:hover {
   font-weight: 900;
-  color: #FFFFFF;
+  color: #C9A227;
 }
 
 .navlink:hover {
   transition-duration: 0.3s;
-  color: #FFDD61;
+  color: #C9A227;
 }
 
 #overlay {
@@ -121,7 +121,7 @@ nav {
 }
 
 .site-cta-button {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-weight: bold;
   background: #C9A227;
   color: #13181C;
@@ -280,23 +280,25 @@ footer {
 /* Pages related CSS */
 
 .page-heading-background {
-  height: 7.5em;
-  background: #EDEEF5;
-  background: url("/assets/aboutusbanner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* height: 7.5em; */
+  /* background: #EDEEF5; */
+  /* background: url("/assets/aboutusbanner.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .page-heading {
   position: relative;
   display: inline-block;
-  font-family: "batman-forever", sans-serif;
-  font-weight: Regular;
-  font-weight: 600;
+  font-family: 'adonais', sans-serif;
+  font-weight: 400;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.04em;
@@ -315,12 +317,12 @@ footer {
 }
 
 .heading-text {
-  font-family: "batman-forever", sans-serif;
-  color: #f2c011;
+  font-family: 'adonais', sans-serif;
+  color: #C9A227;
   position: relative;
   z-index: 2;
-   color: #FFDD61;
-   font-family:'batmfa' ,Inter
+   /* color: #FFDD61; */
+   /* font-family:'batmfa' ,Inter */
 
   
 }
@@ -330,7 +332,7 @@ footer {
   display: inline-block;
   font-family: "fredoka", sans-serif;
   font-weight: bold;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 0.04em;
@@ -339,7 +341,7 @@ footer {
 }
 
 .page-subtitle {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-weight: normal;
   font-size: 0.75em;
   line-height: 1.375rem;
@@ -358,7 +360,7 @@ footer {
 }
 
 .process-description-heading {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-weight: 700;
   font-size: 1em;
   line-height: 1.4rem;
@@ -367,7 +369,7 @@ footer {
 }
 
 .process-description-text {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   margin-top: 1.55em;
   font-weight: normal;
   font-size: 0.67em;
@@ -418,7 +420,7 @@ footer {
 }
 
 .process-choices-description .process-choice-heading {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-style: normal;
   font-weight: bold;
   font-size: 0.83em;
@@ -428,7 +430,7 @@ footer {
 }
 
 .process-choices-description .process-choice-text {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-style: normal;
   font-weight: normal;
   font-size: 0.67em;
@@ -439,7 +441,7 @@ footer {
 }
 
 .process-choices-description .process-choice-or {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-style: normal;
   font-weight: bold;
   font-size: 0.75em;
@@ -463,7 +465,7 @@ footer {
 }
 
 .process-choices-description .process-choice-actions {
-  font-family: 'Space Grotesk';
+  font-family: 'Funnel Display';
   font-style: normal;
   font-weight: bold;
   font-size: 0.67em;
@@ -480,7 +482,7 @@ footer {
 }
 
 .made-with-heart{
-	font-family: 'Space Grotesk';
+	font-family: 'Funnel Display';
 	font-size: 0.7em;
   color : #C9A227;
   white-space: nowrap;
@@ -509,10 +511,10 @@ footer {
 
 }
 
-@font-face {
-	font-family: 'batman-forever';
+/* @font-face {
+	font-family: 'adonais';
 	src: url('../assets/batmanforever.ttf') format('truetype');
-}
+} */
 
 @font-face {
 
@@ -521,17 +523,17 @@ footer {
 
 }
 
-@font-face {
-	font-family: 'Space Grotesk';
+/* @font-face {
+	font-family: 'Funnel Display';
 	src: url(../assets/space_grotesk.ttf) format('truetype');
-}
+} */
 
-@font-face {
+/* @font-face {
 
   font-family: 'batmfa' ;
   src: url('../assets/batmfa.ttf') format('truetype');
 
-}
+} */
 
 .audio-button {
   position: fixed;
