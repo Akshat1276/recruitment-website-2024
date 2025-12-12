@@ -70,12 +70,14 @@
     .card-title1, .card-title2 {
         font-size: 1.3rem;
         margin-bottom: 0.75rem;
+        text-align: left;
     }
 
     .card-text1, .card-text2 {
         font-size: 0.85rem;
         line-height: 1.3rem;
         margin-bottom: 1.5rem;
+        text-align: left;
     }
 
     .card-link1, .card-link2 {
@@ -141,11 +143,13 @@
 
     .card-title1, .card-title2 {
         font-size: 1.2rem;
+        text-align: left;
     }
 
     .card-text1, .card-text2 {
         font-size: 0.8rem;
         line-height: 1.25rem;
+        text-align: left;
     }
 
     .card-art, .card-art2 {
