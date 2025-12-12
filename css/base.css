@@ -305,15 +305,15 @@ footer {
   color: #F83048
 }
 .sociallink img {
-  width: 0.5em;
+  width: 0.65em;
 }
 
 .sociallink img[src="/assets/social_icons/fb.svg"] {
-  width: 0.4em;
+  width: 0.5em;
 }
 
 .sociallink img[src="/assets/social_icons/website.svg"] {
-  width: 0.8em;
+  width: 1em;
 }
 
 
