@@ -1,5 +1,3 @@
-
-
 .first-year-wrapper {
     padding-top: 2.5em;
 }
@@ -33,7 +31,7 @@
     font-family: 'Space Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  /* pushes button to bottom */
+    gap: 0.5rem; /* Consistent gap between all elements */
     box-sizing: border-box;
     text-align: left;
   }
@@ -55,7 +53,12 @@
     z-index: 2;
     text-align: left;
     white-space: nowrap;
-    margin-bottom: 0.5rem;
+    margin: 0;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
   }
   .card-title1{
     color: #BF681B
@@ -69,17 +72,30 @@
     font-family:funnel display; 
     font-size: 0.85rem;
     line-height: 1.3rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding-bottom: 1.5rem;
+    margin: 0;
+    padding: 0;
     padding-right: 0.5rem;
+    padding-bottom: 2rem; /* Space for absolutely positioned deadline */
     position: relative;
     z-index: 2;
     text-align: left;
+    min-height: 4rem; /* Fixed minimum height for text content area */
   }
   
   .card-text1 strong, .card-text2 strong {
     white-space: nowrap;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Hide <br> tags to use CSS spacing instead */
+  .card-text1 br, .card-text2 br {
+    display: none;
   }
   .card-text1{
     color: #914C10
