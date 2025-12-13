@@ -24,6 +24,7 @@
     width: 500px;
     max-width: 100%;
     min-height: 590px;
+    height: 100%;
     border-radius: 40px;
     padding: 2.5rem;
     position: relative;
@@ -31,9 +32,31 @@
     font-family: 'Space Grotesk', sans-serif;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Consistent gap between all elements */
     box-sizing: border-box;
     text-align: left;
+  }
+  
+  /* Header section - fixed position */
+  .card-header {
+    flex-shrink: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Body section - flexible, absorbs extra height */
+  .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  
+  /* Footer section - fixed position */
+  .card-footer {
+    flex-shrink: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
   
   .gold-card {
@@ -58,7 +81,6 @@
     line-height: 1.8rem;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
   }
   .card-title1{
     color: #BF681B
@@ -75,27 +97,39 @@
     margin: 0;
     padding: 0;
     padding-right: 0.5rem;
-    padding-bottom: 2rem; /* Space for absolutely positioned deadline */
     position: relative;
     z-index: 2;
     text-align: left;
-    min-height: 4rem; /* Fixed minimum height for text content area */
   }
   
-  .card-text1 strong, .card-text2 strong {
+  .card-deadline {
     white-space: nowrap;
     display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     margin: 0;
     padding: 0;
-    width: 100%;
+    font-family: funnel display;
+    font-size: 0.85rem;
+    line-height: 1.3rem;
   }
   
-  /* Hide <br> tags to use CSS spacing instead */
-  .card-text1 br, .card-text2 br {
-    display: none;
+  .card-text1 .card-deadline {
+    color: #914C10;
+  }
+  
+  .card-text2 .card-deadline {
+    color: #FFDC89;
+  }
+  
+  .card-footer .card-deadline {
+    color: inherit;
+  }
+  
+  .gold-card .card-footer .card-deadline {
+    color: #914C10;
+  }
+  
+  .rust-card .card-footer .card-deadline {
+    color: #FFDC89;
   }
   .card-text1{
     color: #914C10
@@ -107,19 +141,22 @@
   
   .card-link1, .card-link2 {
     font-family: 'funnel display';
-    position: absolute;
-    bottom: 90px;        /* Above button, stacked vertically */
-    left: 2.5rem;
+    position: relative;
     white-space: nowrap;
     z-index: 3;
     text-decoration: underline;
     font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
   }
   
   /* Design page - buttons and links on the right */
+  .design-page .card-footer {
+    align-items: flex-end;
+  }
+  
   .design-page .card-link1, .design-page .card-link2 {
-    left: auto;
-    right: 2rem;
+    align-self: flex-end;
   }
   .card-link1{
     color: #914C10;
@@ -139,8 +176,6 @@
   }
   
   .submit-button1, .submit-button2 {
-    /* display: block;
-    margin: 0 auto; */
     font-family: 'funnel display';
     background: #1C213A;
     color: white;
@@ -149,19 +184,15 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.75rem;
-    margin-top: auto;      
-    /* align-self: flex-start;  */
-    position: absolute;
-    bottom: 25px;     
-    left: 2.5rem;
+    margin: 0;
     white-space: nowrap;
     z-index: 3;
+    align-self: flex-start;
   }
   
   /* Design page - buttons on the right */
   .design-page .submit-button1, .design-page .submit-button2 {
-    left: auto;
-    right: 2rem;
+    align-self: flex-end;
   }
   .submit-button1{
     font-family: funnel display;
@@ -176,20 +207,16 @@
   }
   .submit-button3, .submit-button4{
     font-family: funnel display;
-    /* background: #FFCB51; */
     color: #13181C;
     border: none;
     padding: 0.55rem 1.25rem;
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.75rem;
-    margin-top: auto;      
-    /* align-self: flex-start;  */
-    position: absolute;
-    bottom: 25px;     
-    left: 2.5rem;
+    margin: 0;
     white-space: nowrap;
     z-index: 3;
+    align-self: flex-start;
   }
   .submit-button3{
     font-family: funnel display;
